@@ -78,7 +78,8 @@ p {
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     margin: 25px auto;
 }  
 
@@ -90,9 +91,32 @@ p {
     letter-spacing: 0.02em;
 }
 
-/* 
+/* make btn responsive on smaller screens  */
+@media (max-width: 768px){
+    .btn {
+        font-size: 14px;
+    }
+}
+
+
+/* img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    max-width: auto;
+} */
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
   .container {
     max-width: 960px;
     margin: 0 auto;
     padding: 0 20px;
-} */
+} 
